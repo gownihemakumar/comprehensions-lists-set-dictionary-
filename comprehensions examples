@@ -1,0 +1,43 @@
+1.
+numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+squares=[x*x for x in numbers]
+print(squares)
+
+
+2.
+number=[i for i in range(1,20)]
+even_numbers=[x for x in number if x%2!=0]
+print(even_numbers)
+
+
+3.
+marks=[i for i in range(1,100) if i%5==0]
+pass_marks=[x for x in marks if x>35]
+print(pass_marks)
+
+
+4.
+names=["hemu","kishore","farhan"]
+marks=[35,45,99]
+name_mark={names[i]:marks[i] for i in range(len(names))}
+print(name_mark)
+
+
+5.
+names=["hemu","kishore","farhan"]
+upper_names=[names.upper() for names in names]
+print(upper_names)
+
+
+6.
+marks = [20,30,40,50,60,70]
+result = [
+    "Pass" if mark >= 35
+    else " Fail" for mark in marks
+]
+print(result)
+
+7.
+numbers = [1, 2, 3, 4, 5]
+squares = {x : x * x for x in numbers}
+print(squares)
